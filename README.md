@@ -137,8 +137,8 @@ principles:
   <a href="https://github.com/aamsellem">
     <img src="https://img.shields.io/badge/GitHub-aamsellem-181717?style=for-the-badge&logo=github" />
   </a>
-  <a href="https://linkedin.com/in/aamsellem">
-    <img src="https://img.shields.io/badge/LinkedIn-aamsellem-0A66C2?style=for-the-badge&logo=linkedin" />
+  <a href="https://www.linkedin.com/in/aur%C3%A9lien-amsellem-86472727/">
+    <img src="https://img.shields.io/badge/LinkedIn-Aurélien_Amsellem-0A66C2?style=for-the-badge&logo=linkedin" />
   </a>
 </p>
 
