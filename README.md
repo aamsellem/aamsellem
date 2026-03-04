@@ -110,7 +110,7 @@ principles:
 
 <p align="center">
 <img src="https://github-readme-stats.vercel.app/api?username=aamsellem&show_icons=true&theme=rose_pine&hide_border=true&bg_color=0d1117&title_color=FF9EAA&icon_color=FF9EAA&text_color=c9d1d9" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com?user=aamsellem&theme=rose-pine&hide_border=true&background=0d1117&ring=FF9EAA&fire=FF9EAA&currStreakLabel=FF9EAA" width="49%" />
+<img src="https://streak-stats.demolab.com?user=aamsellem&theme=rose-pine&hide_border=true&background=0d1117&ring=FF9EAA&fire=FF9EAA&currStreakLabel=FF9EAA" width="49%" />
 </p>
 
 <p align="center">
