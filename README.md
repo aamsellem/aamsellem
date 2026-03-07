@@ -16,6 +16,8 @@
   <img src="https://img.shields.io/badge/SwiftUI-0071E3?style=for-the-badge&logo=swift&logoColor=white" />
   <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" />
   <img src="https://img.shields.io/badge/Claude_Code-blueviolet?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/Olares-0078D4?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" />
   <img src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white" />
 </p>
 
@@ -70,6 +72,20 @@ struct Developer: Identifiable {
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+#### <img src="https://img.shields.io/badge/🧠-0078D4?style=flat-square" /> [Orales Market](https://github.com/aamsellem/orales-market)
+**LLM models for the Olares Store**
+> Alternative app source for Olares — deploy open-weight LLMs (Qwen, Llama) via llama.cpp & vLLM. Helm charts, GPU-accelerated, one-click install.
+>
+> `Helm` `Kubernetes` `llama.cpp` `GGUF` `CUDA`
+
+</td>
+<td width="50%">
+
+</td>
+</tr>
 </table>
 
 ---
@@ -90,6 +106,12 @@ ai_tooling:
   runtime:  Claude Code (shell process, not API)
   pattern:  "enriched prompts + local memory + personality layer"
   belief:   "AI should amplify humans, not replace them"
+
+selfhosted_ai:
+  platform: Olares (Kubernetes-based personal cloud)
+  backends: [ llama.cpp, vLLM ]
+  models:   [ Qwen3.5-35B-A3B, Qwen3.5-27B ]
+  format:   Helm charts + OlaresManifest
 
 infrastructure:
   hosting:  GitHub Releases (DMG)
@@ -129,6 +151,7 @@ principles:
 [2025-01-10] Started Mochi Mochi — what if your AI companion was a cute rice ball?
 [2025-03-xx] Mochi Mochi ships with gamification, Notion sync, 8 personalities
 [2026-03-04] Still shipping. Still local. Still private. 🍡
+[2026-03-07] orales-market — bringing open LLMs to the Olares Store 🧠
 ```
 
 ---
