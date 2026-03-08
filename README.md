@@ -84,6 +84,12 @@ struct Developer: Identifiable {
 </td>
 <td width="50%">
 
+#### <img src="https://img.shields.io/badge/⚡-FF6B35?style=flat-square" /> [Orales One Market](https://github.com/aamsellem/orales-one-market)
+**Optimized AI apps for the Olares One**
+> Custom Cloudflare Worker market source for Olares One (RTX 5090M 24GB). Qwen3.5 35B at 128 t/s. Helm charts, auto-catalog, one-click install.
+>
+> `Cloudflare Workers` `TypeScript` `Helm` `llama.cpp` `CUDA`
+
 </td>
 </tr>
 </table>
@@ -152,6 +158,7 @@ principles:
 [2025-03-xx] Mochi Mochi ships with gamification, Notion sync, 8 personalities
 [2026-03-04] Still shipping. Still local. Still private. 🍡
 [2026-03-07] orales-market — bringing open LLMs to the Olares Store 🧠
+[2026-03-08] orales-one-market — custom market source for Olares One, 128 t/s ⚡
 ```
 
 ---
