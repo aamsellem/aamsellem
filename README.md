@@ -86,7 +86,7 @@ struct Developer: Identifiable {
 
 #### <img src="https://img.shields.io/badge/⚡-FF6B35?style=flat-square" /> [Orales One Market](https://github.com/aamsellem/orales-one-market)
 **Optimized AI apps for the Olares One**
-> Custom Cloudflare Worker market source for Olares One (RTX 5090M 24GB). Tuned LLM serving with auto-catalog and one-click install.
+> Hand-tuned AI apps for RTX 5090M 24GB. Qwen3.5 35B at **129 t/s**, GLM-4.7-Flash at **131 t/s**, Qwen3-TTS with voice cloning. One-click install via Cloudflare Worker market source.
 >
 > `Cloudflare Workers` `TypeScript` `Helm` `llama.cpp` `CUDA`
 
@@ -114,10 +114,11 @@ ai_tooling:
   belief:   "AI should amplify humans, not replace them"
 
 selfhosted_ai:
-  platform: Olares (Kubernetes-based personal cloud)
-  backends: [ llama.cpp, vLLM ]
-  models:   [ Qwen3.5-35B-A3B, Qwen3.5-27B ]
-  format:   Helm charts + OlaresManifest
+  platform: Olares One (RTX 5090M 24GB + 96GB DDR5)
+  backends: [ llama.cpp, Gradio ]
+  models:   [ Qwen3.5-35B-A3B, GLM-4.7-Flash, Qwen3-TTS ]
+  speeds:   { Qwen3.5: "129 t/s", GLM-4.7: "131 t/s" }
+  format:   Helm charts + Cloudflare Worker market
 
 infrastructure:
   hosting:  GitHub Releases (DMG)
@@ -159,6 +160,7 @@ principles:
 [2026-03-04] Still shipping. Still local. Still private. 🍡
 [2026-03-07] orales-market — bringing open LLMs to the Olares Store 🧠
 [2026-03-08] orales-one-market — custom market source for Olares One ⚡
+[2026-03-13] Qwen3.5 129 t/s, GLM-4.7 131 t/s, TTS with voice cloning — all on 24GB 🔥
 ```
 
 ---
