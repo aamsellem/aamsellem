@@ -85,10 +85,10 @@ struct Developer: Identifiable {
 <td width="50%">
 
 #### <img src="https://img.shields.io/badge/⚡-FF6B35?style=flat-square" /> [Orales One Market](https://github.com/aamsellem/orales-one-market)
-**Optimized AI apps for the Olares One**
-> Hand-tuned AI apps for RTX 5090M 24GB. Nemotron 30B at **184 t/s**, Qwen3.5 35B at **129 t/s**, Qwen3-TTS with voice cloning. One-click install via Cloudflare Worker market source.
+**16 optimized AI apps for the Olares One**
+> Hand-tuned for RTX 5090M 24GB. Gemma 4 at **119 t/s**, Qwen3.5 at **129 t/s**, Nemotron at **184 t/s**. TurboQuant rotation for 2x context. Voxtral ASR + TTS. Native vision. One-click install.
 >
-> `Cloudflare Workers` `TypeScript` `Helm` `llama.cpp` `CUDA`
+> `Cloudflare Workers` `TypeScript` `Helm` `llama.cpp` `vLLM` `CUDA`
 
 </td>
 </tr>
@@ -115,9 +115,11 @@ ai_tooling:
 
 selfhosted_ai:
   platform: Olares One (RTX 5090M 24GB + 96GB DDR5)
-  backends: [ llama.cpp, Gradio ]
-  models:   [ Nemotron-3-Nano-30B-A3B, Qwen3.5-35B-A3B, Qwen3-TTS ]
-  speeds:   { Nemotron: "184 t/s", Qwen3.5: "129 t/s" }
+  backends: [ llama.cpp, vLLM, vLLM-Omni ]
+  models:   [ Gemma-4-26B-A4B, Qwen3.5-35B-A3B, Nemotron-3-Nano-30B, Voxtral, Qwen3-TTS ]
+  speeds:   { Nemotron: "184 t/s", Qwen3.5: "129 t/s", Gemma4: "119 t/s" }
+  features: [ TurboQuant rotation, q4_0 KV cache, 64-128K context, native vision ]
+  apps:     16
   format:   Helm charts + Cloudflare Worker market
 
 infrastructure:
@@ -162,6 +164,9 @@ principles:
 [2026-03-08] orales-one-market — custom market source for Olares One ⚡
 [2026-03-13] Qwen3.5 129 t/s, GLM-4.7 131 t/s, TTS with voice cloning — all on 24GB 🔥
 [2026-03-14] Nemotron 3 Nano 30B-A3B — 184 t/s on Olares One. New speed king 👑
+[2026-04-01] TurboQuant rotation lands in llama.cpp — q4_0 KV cache = 2x context, same quality
+[2026-04-05] Gemma 4 26B-A4B — 119 t/s with native vision. 16 apps on the market now 🚀
+[2026-04-05] Voxtral ASR + Realtime + TTS — complete voice pipeline on Olares One 🎙️
 ```
 
 ---
