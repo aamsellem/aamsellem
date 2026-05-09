@@ -75,7 +75,7 @@ struct Developer: Identifiable {
 <tr>
 <td width="50%">
 
-#### <img src="https://img.shields.io/badge/🧠-0078D4?style=flat-square" /> [Orales Market](https://github.com/aamsellem/orales-market)
+#### <img src="https://img.shields.io/badge/🧠-0078D4?style=flat-square" /> [Olares Market](https://github.com/aamsellem/orales-market)
 **LLM models for the Olares Store**
 > Alternative app source for Olares — deploy open-weight LLMs (Qwen, Llama) via llama.cpp & vLLM. Helm charts, GPU-accelerated, one-click install.
 >
@@ -84,9 +84,9 @@ struct Developer: Identifiable {
 </td>
 <td width="50%">
 
-#### <img src="https://img.shields.io/badge/⚡-FF6B35?style=flat-square" /> [Orales One Market](https://github.com/aamsellem/orales-one-market)
-**19 optimized AI apps for the Olares One**
-> Hand-tuned for RTX 5090M 24GB. Nemotron at **184 t/s**, Qwen3.5 at **129 t/s**, Gemma 4 at **119 t/s**. TurboQuant q4_0 KV cache, 64-128K context. Voxtral ASR + TTS. Devstral coding. Native vision. One-click install.
+#### <img src="https://img.shields.io/badge/⚡-FF6B35?style=flat-square" /> [Olares One Market](https://github.com/aamsellem/olares-one-market)
+**27 optimized AI apps for the Olares One**
+> Hand-tuned for RTX 5090M 24 GB. Gemma 4 26B at **214 t/s** (DFlash), Qwen3.6 27B at **88 t/s** (Turbo) or **77 t/s @ FULL 262K** (long context), Nemotron at **184 t/s**. MTP + DFlash speculative decoding, TurboQuant KV, Voxtral ASR + TTS, OmniVoice 646 languages, music gen. One-click install.
 >
 > `Cloudflare Workers` `TypeScript` `Helm` `llama.cpp` `vLLM` `CUDA`
 
@@ -114,12 +114,12 @@ ai_tooling:
   belief:   "AI should amplify humans, not replace them"
 
 selfhosted_ai:
-  platform: Olares One (RTX 5090M 24GB + 96GB DDR5)
-  backends: [ llama.cpp, vLLM, vLLM-Omni ]
-  models:   [ Gemma-4-26B-A4B, Qwen3.5-35B-A3B, Nemotron-3-Nano-30B, Nemotron-Cascade-2, Devstral-24B, GLM-4.7, Voxtral, Qwen3-TTS ]
-  speeds:   { Nemotron: "184 t/s", Qwen3.5: "129 t/s", Gemma4: "119 t/s" }
-  features: [ TurboQuant rotation, q4_0 KV cache, 64-128K context, native vision, ASR + TTS ]
-  apps:     19
+  platform: Olares One (RTX 5090M 24GB + 96GB DDR5, sm_120 Blackwell)
+  backends: [ llama.cpp, vLLM, vLLM-Omni, ExLlamaV3, custom forks (buun, am17an, Genesis) ]
+  models:   [ Qwen3.6-27B-Dense, Gemma-4-26B-A4B, Gemma-4-E4B, Nemotron-3-Nano-30B, Qwen3.5-35B-A3B, Devstral-24B, GLM-4.7, Voxtral, OmniVoice ]
+  speeds:   { Gemma4-DFlash: "214 t/s", Nemotron: "184 t/s", Qwen3.5-Vision: "131 t/s", Qwen3.5: "129 t/s", Gemma4-MTP: "119 t/s", Qwen3.6-Turbo: "88 t/s", Qwen3.6-LongCtx-262K: "77 t/s" }
+  features: [ MTP speculative decoding, DFlash speculative decoding, TurboQuant K8V4 KV, Unsloth Dynamic quants, native vision, ASR + TTS ]
+  apps:     27
   format:   Helm charts + Cloudflare Worker market
 
 infrastructure:
@@ -160,14 +160,19 @@ principles:
 [2025-01-10] Started Mochi Mochi — what if your AI companion was a cute rice ball?
 [2025-03-xx] Mochi Mochi ships with gamification, Notion sync, 8 personalities
 [2026-03-04] Still shipping. Still local. Still private. 🍡
-[2026-03-07] orales-market — bringing open LLMs to the Olares Store 🧠
-[2026-03-08] orales-one-market — custom market source for Olares One ⚡
+[2026-03-07] olares-market — bringing open LLMs to the Olares Store 🧠
+[2026-03-08] olares-one-market — custom market source for Olares One ⚡
 [2026-03-13] Qwen3.5 129 t/s, GLM-4.7 131 t/s, TTS with voice cloning — all on 24GB 🔥
 [2026-03-14] Nemotron 3 Nano 30B-A3B — 184 t/s on Olares One. New speed king 👑
 [2026-04-01] TurboQuant rotation lands in llama.cpp — q4_0 KV cache = 2x context, same quality
 [2026-04-05] Gemma 4 26B-A4B — 119 t/s with native vision. 16 apps on the market now 🚀
 [2026-04-05] Voxtral ASR + Realtime + TTS — complete voice pipeline on Olares One 🎙️
 [2026-04-10] llama.cpp b8740 — CUDA fused multiply for MoE, 19 apps on the market 🔧
+[2026-04-30] vLLM v0.20.0 + TurboQuant K8V4 + MTP n=3 — Qwen 3.6 27B at 88 t/s on 24 GB Blackwell 💪
+[2026-05-04] First public DFlash bench on consumer 24 GB Blackwell — buun-llama-cpp + spiritbuun's drafter, ~80 t/s ⚡
+[2026-05-07] Gemma 4 E4B MTP, first Blackwell consumer mobile bench: 178 t/s, 77% draft acceptance 🎯
+[2026-05-09] Qwen 3.6 27B Long Context — 77 t/s @ FULL 262K with havenoammo's UD-Q3_K_XL + am17an MTP 🚀
+[2026-05-09] Gemma 4 26B-A4B + DFlash on vLLM tokenspeed-preview — 214 t/s. New speed king 👑
 ```
 
 ---
